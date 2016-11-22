@@ -205,7 +205,7 @@ hr {
 }
 
 /** inside bootstrap table export selection */
-.export > .dropdown-menu > li > a:hover {
+.export .dropdown-menu > li > a:hover {
     background-color: #F1F5F8;
     color: #333;
 }
