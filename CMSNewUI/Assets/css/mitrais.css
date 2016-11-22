@@ -1,0 +1,207 @@
+/** Override Layout CSS **/
+#logo {
+    position:relative;
+    background-color: white;
+    display: block;
+    line-height: 50px;
+}
+
+#top-panel > .row {
+    background-color: white;
+}
+
+body {
+	background-color: #E8E8EF;
+}
+
+#outer {
+	margin: 0 auto 20px;
+	width: 95% !important;
+	background-color: #F1F5F8;
+    padding-bottom: 1em;
+}
+
+#navbar-top-wrapper {
+    min-height: 50px;
+    max-height: 100px;
+}
+
+.navbar-top {
+    margin: 0;
+    border: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    z-index: 2000;
+    /** Remove below css setting, if don't want to use fixed header **/
+    position: fixed;
+    width: 95%;
+}
+
+.navbar-top > .container-fluid {
+    background-color: white;
+}
+
+.navbar-top > .container-fluid > .row {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+#main {
+    margin-top: 0px;
+    margin-bottom: 1.5em;
+}
+
+#main > #ajax-page > .row {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.row > #page-header-title {
+    height: 60px; 
+    width:100%;
+    display:flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#page-title > #sub-title {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#page-title > h3 > a > .glyphicon {
+    font-size: 17px;
+}
+
+#content {
+    -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+    background: #F1F5F8;
+}
+
+@media (max-width:764px) {
+    .row > #page-header-title {
+        margin-top: 50px; 
+    }
+}
+/** End of override layout CSS**/
+
+/** Side Menu CSS **/
+
+#sidebar-left {
+    background-color: #F4F8FB;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: 1px solid #ddd;
+}
+
+.nav.main-menu {
+    width: 100%;
+    margin: 0px !important;
+    background-color: #f8f8f8;
+}
+
+.nav.main-menu > li.menu-header {
+    height: 36px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav.main-menu > li.menu-header > span {
+    margin-top: 0px;
+	margin-bottom: 0px;
+	color: grey;
+    line-height: 36px;
+    padding-left: 15px;
+}
+
+.nav.main-menu > li.group-title > span {
+    color: grey;
+    padding-left: 15px;
+}
+
+.nav.main-menu > li.group-title {
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.nav.main-menu > li.group-title > ul {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.nav.main-menu > li.group-title > ul > li > a {
+    /*font-size: 12px;*/
+}
+
+.nav.main-menu > li > ul > li.active > a {
+    font-weight: bold;
+    color: black;
+}
+
+.menu-mask {
+	border-top: 1px solid #671e7f;
+	width: 90%;
+}
+
+/** End of Side Menu CSS **/
+
+/** select2 CSS **/
+
+.select2 {
+    font-family: 'FontAwesome', 'Arial'
+}
+
+/** End of select2 CSS **/
+
+select.btn-primary {
+    font-weight: normal;
+}
+.table-borderless tbody tr td,
+.table-borderless tbody tr th,
+.table-borderless thead tr th,
+.table-borderless thead tr td,
+.table-borderless tfoot tr th,
+.table-borderless tfoot tr td {
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #F0F0FA;
+}
+
+/** Tab CSS **/
+.tab-content{
+    background-color:white;
+    padding:5px
+}
+
+/** End of Tab CSS **/
+
+hr {
+    height: 1px;
+    color: gainsboro;
+    background-color: gainsboro;
+    border: none;
+}
+
+/** pills color in dashboar **/
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #A785DA;
+    background-color: white;
+}
+
+/** bootstrap table bg color **/
+.bootstrap-table {
+    background-color: white;
+}
+
+/** dropdown hover color in bootstrap table **/
+.nav.main-menu > li > a:hover, .nav.main-menu > li > a:focus, .nav.main-menu > li.active > a, .nav.main-menu .open > a, .nav.main-menu .open > a:hover, .nav.main-menu .open > a:focus, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li.active > a,
+.nav.msg-menu > li > a:hover, .nav.msg-menu > li > a:focus, .nav.msg-menu > li.active > a, .nav.msg-menu .open > a, .nav.msg-menu .open > a:hover, .nav.msg-menu .open > a:focus {
+  background:rgba(0, 0, 0, 0.1);
+  color:#333;
+}

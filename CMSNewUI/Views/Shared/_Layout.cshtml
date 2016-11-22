@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>DevOOPS v2</title>
+    <meta name="description" content="description">
+    <meta name="author" content="DevOOPS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Assets/plugins/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="Assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+    <link href="Assets/plugins/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="Assets/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="Assets/plugins/xcharts/xcharts.min.css" rel="stylesheet">
+    <link href="Assets/plugins/select2/select2.css" rel="stylesheet">
+    <link href="Assets/plugins/justified-gallery/justifiedGallery.css" rel="stylesheet">
+    <link href="Assets/css/style_v1.css" rel="stylesheet">
+    <!-- Mitrais CMS css -->
+    <link href="Assets/css/mitrais.css" rel="stylesheet">
+    <link href="Assets/plugins/chartist/chartist.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="Assets/plugins/font-awesome/css/font-awesome.min.css">
+    <!-- Bootstrap-table CSS -->
+    <link href="Assets/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="http://getbootstrap.com/docs-assets/js/html5shiv.js"></script>
+            <script src="http://getbootstrap.com/docs-assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Start of #outer -->
+    <div id="outer">
+        <!--Start Header-->
+        <div id="screensaver">
+            <canvas id="canvas"></canvas>
+            <i class="fa fa-lock" id="screen_unlock"></i>
+        </div>
+        <div id="modalbox">
+            <div class="devoops-modal">
+                <div class="devoops-modal-header">
+                    <div class="modal-header-name">
+                        <span>Basic table</span>
+                    </div>
+                    <div class="box-icons">
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="devoops-modal-inner">
+                </div>
+                <div class="devoops-modal-bottom">
+                </div>
+            </div>
+        </div>
+        <div id="navbar-top-wrapper">
+            <header class="navbar-top">
+                <div class="container-fluid expanded-panel">
+                    <div class="row">
+                        <div id="logo" class="col-xs-12 col-sm-2">
+                            <a href="index_v1.html"><img src="Assets/img/MitraisCMS.PNG" /></a>
+                        </div>
+                        <div id="top-panel" class="col-xs-12 col-sm-10">
+                            <div class="row">
+                                <div class="col-xs-8 col-sm-4">
+                                    <!-- global search -->
+                                    <div id="search">
+                                        <select class="select2" style="width: 350px;">
+                                            <option value="" disabled selected></option>
+                                            <option value="" disabled selected></option>
+                                            <optgroup label="Competencies">
+                                                <option value="Computing Design">Computing Design</option>
+                                                <option value="Computing Foundations">Computing Foundations</option>
+                                                <option value="Medical Computing Analysis">Medical Computing Analysis</option>
+                                                <option value="Mining Computing Design">Mining Computing Design</option>
+                                            </optgroup>
+                                            <optgroup label="Projects">
+                                                <option value="Design Computing Australia">Design Computing Australia</option>
+                                                <option value="Mitrais Computing Account">Mitrais Computing Account</option>
+                                                <option value="Mitrais Computing Solution">Mitrais Computing Solution</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 col-sm-8 top-panel-right">
+                                    <ul class="nav navbar-nav pull-right panel-menu">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle account" data-toggle="dropdown">
+                                                <i class="fa fa-angle-down pull-right"></i>
+                                                <div class="avatar pull-right">
+                                                    <img src="Assets/img/avatar.jpg" class="img-circle" alt="avatar" />
+                                                </div>
+                                                <div class="user-mini pull-right">
+                                                    <span class="welcome">John Applesed</span>
+                                                    <span>Reviewer</span>
+                                                </div>
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-user"></i>
+                                                        <span>Profile</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ajax/page_messages.html" class="ajax-link">
+                                                        <i class="fa fa-envelope"></i>
+                                                        <span>Messages</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ajax/gallery_simple.html" class="ajax-link">
+                                                        <i class="fa fa-picture-o"></i>
+                                                        <span>Albums</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="ajax/calendar.html" class="ajax-link">
+                                                        <i class="fa fa-tasks"></i>
+                                                        <span>Tasks</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-cog"></i>
+                                                        <span>Settings</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="fa fa-power-off"></i>
+                                                        <span>Logout</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!--End Header-->
+        <!--Start Container-->
+        <div id="main" class="container-fluid">
+            <div id="ajax-page">
+                @RenderBody();
+            </div>
+        </div>
+        <!--End Container-->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!--<script src="http://code.jquery.com/jquery.js"></script>-->
+        <script src="/Assets/plugins/jquery/jquery.min.js"></script>
+        <script src="/Assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="/Assets/plugins/bootstrap/bootstrap.min.js"></script>
+        <script src="/Assets/plugins/justified-gallery/jquery.justifiedGallery.min.js"></script>
+        <script src="Assets/plugins/tinymce/tinymce.min.js"></script>
+        <script src="Assets/plugins/tinymce/jquery.tinymce.min.js"></script>
+        <!-- All functions for this theme + document.ready processing -->
+        <script src="Assets/js/devoops.js"></script>
+        <script src="Assets/plugins/select2/select2.js"></script>
+        <script src="Assets/js/mitrais.js"></script>
+        <!-- Bootstrap-table JS -->
+        <script src="Assets/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+        <script src="Assets/plugins/bootstrap-table/extensions/export/bootstrap-table-export.js"></script>
+        <!-- For Bootstrap-table export, please keep this include in order -->
+        <script type="text/javascript" src="Assets/plugins/table-export-jquery/libs/FileSaver/FileSaver.min.js"></script>
+        <script type="text/javascript" src="Assets/plugins/table-export-jquery/libs/js-xlsx/xlsx.core.min.js"></script>
+        <script type="text/javascript" src="Assets/plugins/table-export-jquery/libs/jsPDF/jspdf.min.js"></script>
+        <script type="text/javascript" src="Assets/plugins/table-export-jquery/libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+        <script type="text/javascript" src="Assets/plugins/table-export-jquery/libs/html2canvas/html2canvas.min.js"></script>
+        <script type="text/javascript" src="Assets/plugins/table-export-jquery/tableExport.min.js"></script>
+    </div>
+    <!-- end of #outer -->
+</body>
+</html>
