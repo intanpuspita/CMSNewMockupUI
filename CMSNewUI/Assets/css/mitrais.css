@@ -199,9 +199,13 @@ hr {
     background-color: white;
 }
 
-/** dropdown hover color in bootstrap table **/
-.nav.main-menu > li > a:hover, .nav.main-menu > li > a:focus, .nav.main-menu > li.active > a, .nav.main-menu .open > a, .nav.main-menu .open > a:hover, .nav.main-menu .open > a:focus, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li.active > a,
-.nav.msg-menu > li > a:hover, .nav.msg-menu > li > a:focus, .nav.msg-menu > li.active > a, .nav.msg-menu .open > a, .nav.msg-menu .open > a:hover, .nav.msg-menu .open > a:focus {
-  background:rgba(0, 0, 0, 0.1);
-  color:#333;
+/** for dropdown menu css **/
+.panel-menu .dropdown-menu > li > a {
+    color: white;
+}
+
+/** inside bootstrap table export selection */
+.export > .dropdown-menu > li > a:hover {
+    background-color: #F1F5F8;
+    color: #333;
 }
