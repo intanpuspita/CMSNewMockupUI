@@ -43,3 +43,8 @@ $(function () {
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
 });
+
+function linkFormatter(value, row, index) {
+    //return "<a href='/userid/id:" + row.id + "'>" + value + "</a>";
+    return "<a href='SelfReviewDetail'>" + value + "</a>";
+}
