@@ -2,25 +2,25 @@ var $table = $('#table');
 var mydata = 
 [
     {
-        "comp_item": "Computing Foundations",
-        "last_result": "Working",
-        "self_review": "Working",
-        "champ_review": "...",
-        "spv_review": "..."
+        "CompItem": "Computing Foundations",
+        "LastResult": "Working",
+        "SelfReview": "Working",
+        "ChampReview": "...",
+        "SpvReview": "..."
     },
     {
-        "comp_item": "Software Construction",
-        "last_result": "Working",
-        "self_review": "Working",
-        "champ_review": "...",
-        "spv_review": "..."
+        "CompItem": "Software Construction",
+        "LastResult": "Working",
+        "SelfReview": "Working",
+        "ChampReview": "...",
+        "SpvReview": "..."
     },
     {
-        "comp_item": "Software Design",
-        "last_result": "Working",
-        "self_review": "Working",
-        "champ_review": "...",
-        "spv_review": "..."
+        "CompItem": "Software Design",
+        "LastResult": "Working",
+        "SelfReview": "Working",
+        "ChampReview": "...",
+        "SpvReview": "..."
     }
 ];
 
