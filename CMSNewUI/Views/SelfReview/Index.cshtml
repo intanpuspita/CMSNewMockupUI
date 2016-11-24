@@ -90,12 +90,17 @@
             <div id="toolbar">
                 <label>Business Communications</label>
             </div>
-            <table id="table"
+            <table 
+                   data-toggle="table"
                    class="table table-hover table-borderless"
+                   @*id="table"*@
+                   data-url="https://dl.dropboxusercontent.com/u/24562802/dummy.response.json"
                    data-striped="true"
                    data-search="true"
                    data-toolbar="#toolbar"
-                   data-show-export="true">
+                   data-show-export="true"
+                   data-query-params="queryParams"
+                   data-pagination="true">
                 <thead>
                     <tr>
                         <th data-field="CompItem">Competency Item</th>

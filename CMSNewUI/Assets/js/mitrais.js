@@ -1,3 +1,4 @@
+/** soon will be deleted, because we will using web api
 var $table = $('#table');
 var mydata = 
 [
@@ -22,7 +23,7 @@ var mydata =
         "ChampReview": "...",
         "SpvReview": "..."
     }
-];
+]; **/
 
 $(function () {
     var placeholder = "&#xf002 Jump to a competency, project, staff or search";
@@ -34,17 +35,30 @@ $(function () {
       }
     });
     
+    /** soon will be deleted, because we will using web api
     $('#table').bootstrapTable({
         data: mydata
     });
-    console.log(mydata);
+    console.log(mydata);**/
 });
 
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
 });
 
+/* link formatter function*/
 function linkFormatter(value, row, index) {
     //return "<a href='/userid/id:" + row.id + "'>" + value + "</a>";
     return "<a href='SelfReviewDetail'>" + value + "</a>";
+}
+
+/* query param function */
+function queryParams() {
+    return {
+        type: 'owner',
+        sort: 'updated',
+        direction: 'desc',
+        per_page: 100,
+        page: 1
+    };
 }
