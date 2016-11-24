@@ -42,4 +42,24 @@ $(function () {
 
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
+
+    $("#cmb-attachtype").change(function () {
+        $("#form-attachment").find("div[id^='attinput-']").css("display", "none");
+
+        $("#" + $(this).val()).css("display", "");
+    });
+
+    $("#lnk-delurl").click(function () {
+        alert("yuhuuu");
+        $(this).parentsUntil("tr").remove();
+    });
+
+    $("#btn-submit").click(function () {
+        var html = "";
+        var appendTo = "#tbl-file > tbody > tr > td";
+
+        html = html + "<tr class='jFiler-item' style='height:28px'><td style='width:100px'>Url</td><td style='width:159px'>" + $("#url").val() + "</td><td style='width:100px'><a class=' lnk-delurl' id='lnk-delurl'>delete</a></td></tr>";
+        
+        $(html).appendTo(appendTo);
+    });
 });

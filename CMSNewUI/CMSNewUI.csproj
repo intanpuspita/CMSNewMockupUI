@@ -592,6 +592,11 @@
     <Content Include="Assets\plugins\fullcalendar\lang\zh-cn.js" />
     <Content Include="Assets\plugins\fullcalendar\lang\zh-tw.js" />
     <Content Include="Assets\plugins\fullcalendar\license.txt" />
+    <Content Include="Assets\plugins\jquery-filer\css\jquery.filer.css" />
+    <Content Include="Assets\plugins\jquery-filer\css\themes\jquery.filer-dragdropbox-theme.css" />
+    <Content Include="Assets\plugins\jquery-filer\js\custom.js" />
+    <Content Include="Assets\plugins\jquery-filer\js\jquery.filer.js" />
+    <Content Include="Assets\plugins\jquery-filer\js\jquery.filer.min.js" />
     <Content Include="Assets\plugins\jQuery-Knob\jquery.knob.js" />
     <Content Include="Assets\plugins\jQuery-Knob\jquery.knob.min.js" />
     <Content Include="Assets\plugins\jquery-ui-timepicker-addon\i18n\jquery-ui-timepicker-addon-i18n.js" />

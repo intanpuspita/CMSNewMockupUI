@@ -12,6 +12,7 @@
 
 body {
 	background-color: #E8E8EF;
+    font-size: 12px;
 }
 
 #outer {
@@ -84,6 +85,13 @@ body {
 @media (max-width:764px) {
     .row > #page-header-title {
         margin-top: 50px; 
+    }
+}
+
+@media (max-width:884px) {
+    .sidepanel {
+        padding-left: 0px;
+        padding-right: 0px; 
     }
 }
 /** End of override layout CSS**/
@@ -208,4 +216,9 @@ hr {
 .export .dropdown-menu > li > a:hover {
     background-color: #F1F5F8;
     color: #333;
+}
+
+/** Space button CSS **/
+.group > .btn {
+    margin-left: 5px;
 }
