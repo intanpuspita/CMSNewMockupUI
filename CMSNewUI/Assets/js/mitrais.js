@@ -1,28 +1,29 @@
+/** soon will be deleted, because we will using web api
 var $table = $('#table');
 var mydata = 
 [
     {
-        "comp_item": "Computing Foundations",
-        "last_result": "Working",
-        "self_review": "Working",
-        "champ_review": "...",
-        "spv_review": "..."
+        "CompItem": "Computing Foundations",
+        "LastResult": "Working",
+        "SelfReview": "Working",
+        "ChampReview": "...",
+        "SpvReview": "..."
     },
     {
-        "comp_item": "Software Construction",
-        "last_result": "Working",
-        "self_review": "Working",
-        "champ_review": "...",
-        "spv_review": "..."
+        "CompItem": "Software Construction",
+        "LastResult": "Working",
+        "SelfReview": "Working",
+        "ChampReview": "...",
+        "SpvReview": "..."
     },
     {
-        "comp_item": "Software Design",
-        "last_result": "Working",
-        "self_review": "Working",
-        "champ_review": "...",
-        "spv_review": "..."
+        "CompItem": "Software Design",
+        "LastResult": "Working",
+        "SelfReview": "Working",
+        "ChampReview": "...",
+        "SpvReview": "..."
     }
-];
+]; **/
 
 $(function () {
     var placeholder = "&#xf002 Jump to a competency, project, staff or search";
@@ -34,10 +35,11 @@ $(function () {
       }
     });
     
+    /** soon will be deleted, because we will using web api
     $('#table').bootstrapTable({
         data: mydata
     });
-    console.log(mydata);
+    console.log(mydata);**/
 });
 
 $(document).ready(function () {
@@ -63,3 +65,20 @@ $(document).ready(function () {
         $(html).appendTo(appendTo);
     });
 });
+
+/* link formatter function*/
+function linkFormatter(value, row, index) {
+    //return "<a href='/userid/id:" + row.id + "'>" + value + "</a>";
+    return "<a href='SelfReviewDetail'>" + value + "</a>";
+}
+
+/* query param function */
+function queryParams() {
+    return {
+        type: 'owner',
+        sort: 'updated',
+        direction: 'desc',
+        per_page: 100,
+        page: 1
+    };
+}
