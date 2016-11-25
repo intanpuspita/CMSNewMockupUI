@@ -84,11 +84,11 @@ body {
 
 @media (max-width:764px) {
     .row > #page-header-title {
-        margin-top: 50px; 
+        margin-top: 50px;
     }
 }
 
-@media (max-width:884px) {
+@media (max-width:888px) {
     .sidepanel {
         padding-left: 0px;
         padding-right: 0px; 

@@ -51,16 +51,11 @@ $(document).ready(function () {
         $("#" + $(this).val()).css("display", "");
     });
 
-    $("#lnk-delurl").click(function () {
-        alert("yuhuuu");
-        $(this).parentsUntil("tr").remove();
-    });
-
     $("#btn-submit").click(function () {
         var html = "";
         var appendTo = "#tbl-file > tbody > tr > td";
 
-        html = html + "<tr class='jFiler-item' style='height:28px'><td style='width:100px'>Url</td><td style='width:159px'>" + $("#url").val() + "</td><td style='width:100px'><a class=' lnk-delurl' id='lnk-delurl'>delete</a></td></tr>";
+        html = html + "<tr class='jFiler-item' style='height:28px'><td style='width:100px'>Url</td><td style='width:159px'>" + $("#url").val() + "</td><td style='width:100px'><a class='icon-jfi-trash' onclick='javascript:deleteUrl(this)'></a></td></tr>";
         
         $(html).appendTo(appendTo);
     });
@@ -81,4 +76,10 @@ function queryParams() {
         per_page: 100,
         page: 1
     };
+}
+
+/* delete attachment URL */
+function deleteUrl(e)
+{
+    $(e).closest("tr").remove();
 }
