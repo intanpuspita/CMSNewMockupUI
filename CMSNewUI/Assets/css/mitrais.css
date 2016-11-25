@@ -231,3 +231,9 @@ tr.jFiler-item {
 tr.jFiler-item > td {
     padding: 8px;
 }
+
+/* scrollable table*/
+.table-scrollable {
+    height: 100px;
+    overflow: auto;
+}
