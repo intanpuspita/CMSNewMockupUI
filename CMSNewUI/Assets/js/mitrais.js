@@ -44,21 +44,6 @@ $(function () {
 
 $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
-
-    $("#cmb-attachtype").change(function () {
-        $("#form-attachment").find("div[id^='attinput-']").css("display", "none");
-
-        $("#" + $(this).val()).css("display", "");
-    });
-
-    $("#btn-submit").click(function () {
-        var html = "";
-        var appendTo = "#tbl-file > tbody > tr > td";
-
-        html = html + "<tr class='jFiler-item' style='height:28px'><td style='width:100px'>Url</td><td style='width:159px'>" + $("#url").val() + "</td><td style='width:100px'><a class='icon-jfi-trash' onclick='javascript:deleteUrl(this)'></a></td></tr>";
-        
-        $(html).appendTo(appendTo);
-    });
 });
 
 /* link formatter function*/
@@ -78,8 +63,18 @@ function queryParams() {
     };
 }
 
-/* delete attachment URL */
-function deleteUrl(e)
-{
+/* Save URL Attachment URL */
+function saveURL() {
+    var html = "";
+    var appendTo = "#tbl-file > tbody > tr > td";
+
+    html = html + "<tr class='jFiler-item' style='height:28px'><td style='width:100px'>Url</td><td style='width:159px'><a target='_blank' href='" + $("#url").val() + "'>" + $("#url").val() + "</a></td><td style='width:100px'><a class='icon-jfi-trash' onclick='javascript:deleteUrl(this)'></a></td></tr>";
+
+    $(html).appendTo(appendTo);
+    $("#url").val('');
+}
+
+/* Delete attachment URL */
+function deleteUrl(e){
     $(e).closest("tr").remove();
 }

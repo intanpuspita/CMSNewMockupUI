@@ -55,25 +55,18 @@
                     <h4 class="panel-title">ADD ATTACHMENT</h4>
                 </div>
                 <div class="panel-body">
-                    <form class="form-horizontal" id="form-attachment">
-                        <div class="form-group">
-                            <label class="control-label col-sm-4 col-md-4 col-xs-12 " for="url">Attachment Type</label>
-                            <div class="col-sm-8 col-md-8 col-xs-12">
-                                <select class="demo-default btn btn-default" id="cmb-attachtype">
-                                    <option value="attinput-url">URL</option>
-                                    <option value="attinput-file">File</option>
-                                </select>
-                            </div>
-                        </div>
+                    <div class="form-horizontal">
                         <div class="form-group" id="attinput-url">
-                            <label class="control-label col-sm-4 col-md-4 col-xs-12 " for="url">Address</label>
-                            <div class="col-sm-8 col-md-8 col-xs-12">
-                                <input type="url" class="form-control" id="url" placeholder="Enter URL Address">
+                            <label class="control-label col-sm-3 col-md-3 col-xs-12 " for="url">Address</label>
+                            <div class="col-sm-9 col-md-9 col-xs-12">
+                                <form action="javascript:saveURL()">
+                                    <input type="url" class="form-control" id="url" placeholder="Enter URL Address">
+                                </form>
                             </div>
                         </div>
-                        <div class="form-group" style="display:none" id="attinput-file">
-                            <label class="control-label col-sm-4 col-md-4 col-xs-12" for="pwd">File</label>
-                            <div class="col-sm-8 col-md-8 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label col-sm-3 col-md-3 col-xs-12" for="pwd">File</label>
+                            <div class="col-sm-9 col-md-9 col-xs-12">
                                 <div class="input-group">
                                     <label class="input-group-btn">
                                         <span class="btn btn-primary">
@@ -84,16 +77,13 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
-                    <div class="row" style="padding-right:10px">
-                        <button class="btn btn-primary pull-right" id="btn-submit">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="col-xs-12 col-sm-12 col-md-7 sidepanel" style="padding-right:0px; min-height:211px">
-            <div class="panel panel-default">
+        <div class="col-xs-12 col-sm-12 col-md-7 sidepanel" style="padding-right:0px;">
+            <div class="panel panel-default" style="min-height: 178px">
                 <div class="panel-heading">
                     <h4 class="panel-title">ATTACHMENTS</h4>
                 </div>
@@ -117,8 +107,6 @@
         </div>
 
         <div class="row group" style="padding:10px">
-            <button class="btn btn-primary pull-right">Launch</button>
-            <button class="btn btn-primary pull-right">Delete</button>
             <button class="btn btn-primary pull-right">Save</button>
             <button class="btn btn-primary pull-right">Close</button>
         </div>
