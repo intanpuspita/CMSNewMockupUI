@@ -4,7 +4,7 @@ $(document).ready(function(){
 		showThumbs: true,
 		addMore: true,
 		allowDuplicates: false,
-		appendTo: "#tbl-file > tbody > tr > td"
+		appendTo: "#tbl-file > tbody > tr > td#jfiler-append"
 	});
 
 	$('.jFiler-input').css("display", "none");

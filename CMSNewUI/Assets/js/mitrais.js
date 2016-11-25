@@ -65,10 +65,12 @@ function queryParams() {
 
 /* Save URL Attachment URL */
 function saveURL() {
-    var html = "";
-    var appendTo = "#tbl-file > tbody > tr > td";
+    var url = $("#url").val().substr(0, 30);
 
-    html = html + "<tr class='jFiler-item' style='height:28px'><td style='width:100px'>Url</td><td style='width:159px'><a target='_blank' href='" + $("#url").val() + "'>" + $("#url").val() + "</a></td><td style='width:100px'><a class='icon-jfi-trash' onclick='javascript:deleteUrl(this)'></a></td></tr>";
+    var html = "";
+    var appendTo = "#tbl-file > tbody";
+
+    html = html + "<tr class='jFiler-item'><td style='width:60px'>Url</td><td style='width:258px'><a target='_blank' href='" + $("#url").val() + "'>" + ($("#url").val().length > 30 ? $("#url").val().substr(0, 27) + "..." : $("#url").val()) + "</a></td><td style='width:25px' align='right'><a class='icon-jfi-trash' onclick='javascript:deleteUrl(this)'></a></td></tr>";
 
     $(html).appendTo(appendTo);
     $("#url").val('');

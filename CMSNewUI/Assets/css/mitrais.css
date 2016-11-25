@@ -222,3 +222,12 @@ hr {
 .group > .btn {
     margin-left: 5px;
 }
+
+/** jFiler CSS **/
+tr.jFiler-item {
+    height:28px;
+}
+
+tr.jFiler-item > td {
+    padding: 8px;
+}

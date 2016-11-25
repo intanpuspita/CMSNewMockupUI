@@ -1057,8 +1057,8 @@
         theme: 'default',
         templates: {
             box: '<tbody class="jFiler-items-list jFiler-items-default"></tbody>',
-            item: '<tr class="jFiler-item"><td style="width: 100px">File</td><td style="width: 139px" class="jFiler-item-title" title="{{fi-name}}">{{fi-name | limitTo:500}}</td><td class="jFiler-item-assets" style="width: 100px"><ul class="list-inline"><li><a class="icon-jfi-trash jFiler-item-trash-action"></a></li></ul></td></tr>',
-            itemAppend: '<tr class="jFiler-item"><td style="width: 100px">File</td><td style="width: 139px" class="jFiler-item-title">{{fi-name | limitTo:500}}</td><td class="jFiler-item-assets" style="width: 100px"><ul class="list-inline"><li><a class="icon-jfi-trash jFiler-item-trash-action"></a></li></ul></td></tr>',
+            item: '<tr class="jFiler-item"><td style="width: 60px">File</td><td style="width: 258px" class="jFiler-item-title" title="{{fi-name}}">{{fi-name | limitTo:500}}</td><td class="jFiler-item-assets" style="width: 25px" align="right"><a class="icon-jfi-trash jFiler-item-trash-action"></a></td></tr>',
+            itemAppend: '<tr class="jFiler-item"><td style="width: 60px">File</td><td style="width: 258px" class="jFiler-item-title">{{fi-name | limitTo:500}}</td><td class="jFiler-item-assets" style="width: 25px" align="right"><a class="icon-jfi-trash jFiler-item-trash-action"></a></td></tr>',
             progressBar: '<div class="bar"></div>',
             itemAppendToEnd: false,
             removeConfirmation: true,
