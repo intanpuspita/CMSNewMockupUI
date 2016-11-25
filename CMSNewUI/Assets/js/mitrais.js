@@ -75,6 +75,10 @@ function saveURL() {
 }
 
 /* Delete attachment URL */
-function deleteUrl(e){
-    $(e).closest("tr").remove();
+function deleteUrl(e) {
+    var result = confirm("Are you sure you want to remove this URL?");
+    if (result) {
+        //Logic to delete the item
+        $(e).closest("tr").remove();
+    }
 }
