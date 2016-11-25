@@ -224,7 +224,7 @@ hr {
 }
 
 /* scrollable table*/
-.table-scroable {
+.table-scrollable {
     height: 100px;
     overflow: auto;
 }
